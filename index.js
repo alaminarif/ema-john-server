@@ -53,7 +53,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Ema-John is Running ");
 });
-
+app.get("/hero", (req, res) => {
+  res.send("heroku");
+});
 app.listen(port, () => {
   console.log("Ema-john connect port:", port);
 });
